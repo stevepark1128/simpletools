@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 interface HeaderProps {
     title?: string;
-  }
+}
 
 const Header = ({title} : HeaderProps) => {
   return (
