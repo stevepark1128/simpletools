@@ -1,5 +1,4 @@
 import React from 'react'
-
 interface StackProps {
     children?: any;
     spacing: number;
