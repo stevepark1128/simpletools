@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Stack from './components/Stack';
 
 function App() {
-  const headerProp: any = {
+  const stackProp: any = {
     spacing: 2,
     direction:"row",
     wrap:false
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Stack headerProp >
+      <Stack stackProp >
         <textarea>1</textarea>
         <textarea>2</textarea>
       </Stack>
