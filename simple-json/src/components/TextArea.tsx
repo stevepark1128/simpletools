@@ -1,13 +1,20 @@
+import { number, string } from 'prop-types'
 import React from 'react'
 
-const TextArea = () => {
+export declare interface TextAreaProps {
+  rows: number;
+  cols: number;
+  value: string;
+  title: string;
+}
+const TextArea = ({rows = 30, cols = 50, value = "", title = ""}: any) => {
   return (
     <div>
-      <label>Enter value : </label>
-      <textarea
-        rows={5}
-        cols={5}
-      />
+      <div><label>{title} : </label></div>
+      <div><textarea
+        rows={rows}
+        cols={cols}
+      >{value}</textarea></div>
     </div>
   )
 }

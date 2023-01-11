@@ -1,14 +1,14 @@
 import React from 'react'
-export interface StackProps {
-    children: any;
+export declare interface StackProps {
+    children?: any;
     spacing: number;
     direction: string;
     wrap: boolean;
 }
 
-const Stack = ({children, spacing = 2, direction = "row", wrap = false} : any) => {
+const Stack = ({children, spacing = 2, direction = "row", wrap = false} : StackProps) => {
     const style = {
-        display: "false",
+        display: "flex",
         gap: `${spacing * 0.25}rem`,
         fileWrap: wrap ? "wrap": "nowrap",
         fileDirection: direction,
